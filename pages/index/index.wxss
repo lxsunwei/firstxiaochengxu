@@ -1,0 +1,89 @@
+/**index.wxss**/
+
+.container {
+  background: #f2f2f2
+  
+}
+.order_item {
+  background: #fff;
+  padding: 25rpx
+}
+.order_item_hover {
+  background: #f2f2f2
+}
+
+.order_item_header {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 20rpx
+}
+.order_name {
+  font-size: 32rpx
+}
+.order_loan {
+  margin: 0rpx 2rpx 0rpx 56rpx;
+  color: #fa5a5a;
+  font-size: 35rpx
+}
+.order_loan_label {
+  font-size: 22rpx
+}
+.order_month {
+  margin: 0rpx 2rpx 0rpx 56rpx;
+  color: #fa5a5a;
+  font-size: 35rpx
+}
+.order_month_label {
+  font-size: 22rpx
+}
+.order_price {
+  color: #fa5a5a;
+  font-size: 32rpx
+}
+.order_price_unit {
+  color: #fa5a5a;
+  font-size: 26rpx
+}
+.order_price_container {
+  position: absolute;
+  right: 5rpx;
+  padding-right: 25rpx
+}
+.order_divider {
+  background: #f2f2f2;
+  height: 30rpx
+}
+.order_detail_icon {
+  width: 25rpx;
+  height: 25rpx
+}
+.order_desc {
+  font-size: 23rpx;
+  padding-left: 10rpx;
+  padding-top: 8rpx
+}
+.order_line {
+  background: #d7d7d7;
+  height: 1rpx;
+  margin-top: 35rpx 
+}
+.order_date {
+  color: #999999;
+  font-size: 22rpx;
+  margin-top: 35rpx
+}
+.order_add_cart {
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  position: absolute;
+  right: 25rpx;
+  margin-top: 18rpx;
+  background: #fa5a5a;
+  color: #fff
+}
+.order_cart_container {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 10rpx
+}

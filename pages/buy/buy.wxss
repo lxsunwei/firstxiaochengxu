@@ -1,0 +1,37 @@
+.radio_pay_coin {
+  position: absolute;
+  right: 26rpx
+}
+.pay_container {
+  padding-left: 16rpx;
+  background: #fff
+}
+.radio_pay_bean {
+  position: absolute;
+  right: 26rpx
+}
+.pay_way {
+  background: #f2f2f2;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  padding-left: 16rpx
+}
+.pay_coin_container {
+  background: #fff;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx
+}
+.pay_bean_container {
+  background: #fff;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx
+}
+.divider {
+  background: #f2f2f2;
+  height: 2rpx;
+  margin-top: 16rpx
+}
+.balance {
+  font-size: small;
+  color: #828282
+}

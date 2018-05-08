@@ -1,0 +1,7 @@
+<view class='container'>
+  <view bindtap='login' class='user_avater_container'>
+    <image class='user_avater' src='../../imgs/user-unlogin.png'></image>
+    <text>登陆</text>
+  </view>
+
+</view>

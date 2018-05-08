@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{orders}}" wx:for-item="order" wx:for-index="idx">
+    <view class="order_item" hover-class='order_item_hover' bindtap='navBuy'>
+      <view class='order_item_header'>
+        <text class='order_name'>{{order.name}}</text>
+        <view>
+          <text class="order_loan">{{order.loan}}</text>
+          <text class="order_loan_label">万</text>
+        </view>
+        <view>
+          <text class="order_month">{{order.month}}</text>
+          <text class="order_month_label">月</text>
+        </view>
+        <view class="order_price_container">
+          <text class="order_price_unit">￥</text>
+          <text class="order_price">{{order.price}}</text>
+        </view>
+      </view>
+      <view>
+        <image class='order_detail_icon' src="{{order.icon}}"></image>
+        <text class='order_desc'>{{order.desc}}</text>
+      </view>
+      <view>
+        <image class='order_detail_icon' src="{{order.icon}}"></image>
+        <text class='order_desc'>{{order.desc}}</text>
+      </view>
+      <view>
+        <image class='order_detail_icon' src="{{order.icon}}"></image>
+        <text class='order_desc'>{{order.desc}}</text>
+      </view>
+      <view class='order_line'></view>
+      <view class='order_cart_container'>
+        <text class='order_date'>{{order.date}}</text>
+        <button class='order_add_cart'>加入购物车</button>
+      </view>
+    </view>
+
+    <view wx:if="{{idx < orders.length -1}}" class='order_divider'></view>
+  </block>
+</view>

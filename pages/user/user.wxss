@@ -1,0 +1,15 @@
+.container {
+}
+.user_avater {
+  width: 100rpx;
+  height: 100rpx;
+  padding-left: 25rpx;
+  margin-right: 20rpx
+}
+.user_avater_container {
+  align-items: center;
+  display: flex;
+  background: #f2f2f2;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx
+}

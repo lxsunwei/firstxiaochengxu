@@ -1,0 +1,30 @@
+<view class="container">
+
+  <text class='pay_way'>请选择支付方式</text>
+
+  <radio-group class='pay_container'>
+
+    <view class='pay_coin_container'>
+      <view>
+        金币支付
+        <radio class='radio_pay_coin' value='pay_coin'></radio>
+      </view>
+      <view class='divider'> </view>
+      <text class='balance'>金币余额： 325</text>
+    </view>
+
+
+    <view class='pay_bean_container'>
+      <label>
+        金豆支付
+        <radio class='radio_pay_bean' value='pay_bean'></radio>
+      </label>
+      <view class='divider'> </view>
+      <text class='balance'>金豆余额： 325</text>
+    </view>
+
+
+  </radio-group>
+
+  <button>支付</button>
+</view>

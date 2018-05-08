@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/buy/buy",
+    "pages/detail/detail",
+    "pages/entrust/entrust"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {"pagePath": "pages/index/index",
+        "text": "抢单",
+        "iconPath": "imgs/app_graporder_normal.png",
+        "selectedIconPath": "imgs/app_graporder_selected.png"
+      },{
+        "pagePath": "pages/entrust/entrust",
+        "text": "一键委托",
+        "iconPath": "imgs/app_graporder_normal.png",
+        "selectedIconPath": "imgs/app_graporder_selected.png"
+      },{
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "imgs/app_user_normal.png",
+        "selectedIconPath": "imgs/app_user_selected.png"
+      }
+    ],
+    "color": "#606060",
+    "selectedColor": "#f23b37",
+    "backgroundColor": "#ffffff"
+  }
+}
