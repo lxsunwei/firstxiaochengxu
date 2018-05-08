@@ -11,6 +11,39 @@
       <image class='image_arrow' src='../../imgs/entrust/arrow_right.png'></image>
     </view>
     <view class='horizontal_divider'></view>
+    <view class='entrust_item'>
+      <image class='image_style' src='../../imgs/entrust/ic_amount.png'></image>
+      <view class='vertical_divier'></view>
+      <text class='text_sytle'>10万</text>
+      <image class='image_arrow' src='../../imgs/entrust/arrow_right.png'></image>
+    </view>
+    <view class='horizontal_divider'></view>
+    <view class='entrust_item'>
+      <image class='image_style' src='../../imgs/entrust/ic_name.png'></image>
+      <view class='vertical_divier'></view>
+      <input class='text_sytle' placeholder='请输入您的姓名' type='text'></input>
+      <image class='image_arrow' src='../../imgs/entrust/arrow_right.png'></image>
+    </view>
+    <view class='horizontal_divider'></view>
+    <view class='entrust_item'>
+      <image class='image_style' src='../../imgs/entrust/ic_phone.png'></image>
+      <view class='vertical_divier'></view>
+      <input class='text_sytle' placeholder='请输入您的手机号' type='number'></input>
+    </view>
+    <view class='horizontal_divider'></view>
+    <view class='entrust_item'>
+      <image class='image_style' src='../../imgs/entrust/ic_picture_code.png'></image>
+      <view class='vertical_divier'></view>
+      <input class='text_sytle' placeholder='请输入图片验证码' type='number'></input>
+    </view>
+    <view class='horizontal_divider'></view>
+    <view class='entrust_item'>
+      <image class='image_style' src='../../imgs/entrust/ic_sms_code.png'></image>
+      <view class='vertical_divier'></view>
+      <input class='text_sytle' placeholder='请输入短信验证码' type='number'></input>
+      <button class='btn_sms'>点击获取</button>
+    </view>
+    <view class='horizontal_divider'></view>
   </view>
 
 </view>
