@@ -1,4 +1,16 @@
 <view class='container'>
-  
+
+  <text class='entrust_desc'>留下简单信息，专业融资顾问帮您贷款</text>
+
+  <view class='entrust_item_container'>
+
+    <view class='entrust_item'>
+      <image class='image_style' src='../../imgs/entrust/ic_identity.png'></image>
+      <view class='vertical_divier'></view>
+      <text class='text_sytle'>上班族</text>
+      <image class='image_arrow' src='../../imgs/entrust/arrow_right.png'></image>
+    </view>
+    <view class='horizontal_divider'></view>
+  </view>
 
 </view>
