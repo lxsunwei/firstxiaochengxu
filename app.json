@@ -5,7 +5,8 @@
     "pages/user/user",
     "pages/buy/buy",
     "pages/detail/detail",
-    "pages/entrust/entrust"
+    "pages/entrust/entrust",
+    "pages/protocol/protocol"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -22,8 +23,8 @@
       },{
         "pagePath": "pages/entrust/entrust",
         "text": "一键委托",
-        "iconPath": "imgs/app_graporder_normal.png",
-        "selectedIconPath": "imgs/app_graporder_selected.png"
+        "iconPath": "imgs/app_entrust_normal.png",
+        "selectedIconPath": "imgs/app_entrust_selected.png"
       },{
         "pagePath": "pages/user/user",
         "text": "我的",

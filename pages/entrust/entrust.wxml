@@ -22,7 +22,10 @@
       <image class='image_style' src='../../imgs/entrust/ic_name.png'></image>
       <view class='vertical_divier'></view>
       <input class='text_sytle' placeholder='请输入您的姓名' type='text'></input>
-      <image class='image_arrow' src='../../imgs/entrust/arrow_right.png'></image>
+      <view class='view_img_sex' bindtap='changeSex'>
+        <image wx:if="{{isBoy}}" class='img_sex' src='../../imgs/entrust/sex_checkbox_boy.png'></image>
+        <image wx:if="{{isGirl}}" class='img_sex' src='../../imgs/entrust/sex_checkbox_girl.png'></image>
+      </view>
     </view>
     <view class='horizontal_divider'></view>
     <view class='entrust_item'>
@@ -35,6 +38,10 @@
       <image class='image_style' src='../../imgs/entrust/ic_picture_code.png'></image>
       <view class='vertical_divier'></view>
       <input class='text_sytle' placeholder='请输入图片验证码' type='number'></input>
+      <view class='view_picture_code' bindtap='randomCode'>
+        <text class='picture_code'>{{pcode}}</text>
+        <image class='img_code_refresh' src='../../imgs/entrust/code_refresh.png'></image>
+      </view>
     </view>
     <view class='horizontal_divider'></view>
     <view class='entrust_item'>
@@ -46,11 +53,12 @@
     <view class='horizontal_divider'></view>
   </view>
 
-  <view class='entrust_bottom_container'>
+  <view>
     <button class='btn_comfirm' hover-class='button-hover'>一键委托</button>
-    <label class='label_protocol'>
-      <checkbox /> 同意  <text class='protocol'>《东方融资网服务协议》</text>
-    </label>
+    <view class='view_protocol'>
+      <checkbox> 同意 </checkbox>
+      <text bindtap='lookProtocol' class='protocol'>《东方融资网服务协议》</text>
+    </view>
   </view>
 
 
