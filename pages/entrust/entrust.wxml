@@ -7,14 +7,26 @@
     <view class='entrust_item'>
       <image class='image_style' src='../../imgs/entrust/ic_identity.png'></image>
       <view class='vertical_divier'></view>
-      <text class='text_sytle'>上班族</text>
+      <view>
+        <picker bindchange="selectIdentity" value="{{iden}}" range="{{identites}}">
+          <view class="text_sytle">
+           {{identity}}
+          </view>
+        </picker>
+      </view>
       <image class='image_arrow' src='../../imgs/entrust/arrow_right.png'></image>
     </view>
     <view class='horizontal_divider'></view>
     <view class='entrust_item'>
       <image class='image_style' src='../../imgs/entrust/ic_amount.png'></image>
       <view class='vertical_divier'></view>
-      <text class='text_sytle'>10万</text>
+      <view>
+        <picker bindchange="selectLoanAmount" value="{{amuntIndex}}" range="{{amounts}}">
+          <view class="text_sytle">
+           {{amount}}
+          </view>
+        </picker>
+      </view>
       <image class='image_arrow' src='../../imgs/entrust/arrow_right.png'></image>
     </view>
     <view class='horizontal_divider'></view>
