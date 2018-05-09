@@ -1,4 +1,10 @@
+page{
+background-color: #f9f9f9;
+
+}
+
 .container {
+  
 }
 
 .entrust_desc {
@@ -59,13 +65,45 @@
   background-color: #d6d6d6;
 }
 
-.btn_sms {
+.btn_sms_code {
   background-color: #ffffff;
-  border: 1rpx solid #f95050;
+  border: 2rpx solid #f95050;
   color: #f95050;
+  border-radius:  10rpx;
   position: absolute;
   right: 22rpx;
-  height: 60rpx;
-  font-size: 26rpx;
-  vertical-align: middle
+  width: 180rpx;
+  height: 59rpx;
+  font-size: 28rpx;
+  text-align: center
+}
+
+.entrust_bottom_container {
+  padding-left: 22rpx;
+  padding-right: 22rpx;
+
+}
+
+.btn_comfirm {
+  background: #f95050;
+  color: #ffffff;
+  margin-top: 40rpx;
+  margin-bottom: 45rpx
+}
+
+.label_protocol{
+  font-size: 28rpx;
+  color: #a1a0a0
+}
+
+.protocol {
+  color: #050505
+}
+
+.button-hover {
+  background-color: #e74242;
+}
+
+.sms_code_button-hover {
+  background-color: #ddd;
 }

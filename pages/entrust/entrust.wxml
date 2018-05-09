@@ -41,9 +41,17 @@
       <image class='image_style' src='../../imgs/entrust/ic_sms_code.png'></image>
       <view class='vertical_divier'></view>
       <input class='text_sytle' placeholder='请输入短信验证码' type='number'></input>
-      <button class='btn_sms'>点击获取</button>
+      <button class='btn_sms_code' hover-class='sms_code_button-hover' size="mini">点击获取</button>
     </view>
     <view class='horizontal_divider'></view>
   </view>
+
+  <view class='entrust_bottom_container'>
+    <button class='btn_comfirm' hover-class='button-hover'>一键委托</button>
+    <label class='label_protocol'>
+      <checkbox /> 同意  <text class='protocol'>《东方融资网服务协议》</text>
+    </label>
+  </view>
+
 
 </view>
