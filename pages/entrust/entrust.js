@@ -11,7 +11,8 @@ Page({
     identity: "上班族",
     identites: ["上班族", "企业主", "个体户", "其他"],
     amount: "10万",
-    amounts: ["5万", "10万", "20万", "30万", "40万", "80万"]
+    amounts: ["5万", "10万", "20万", "30万", "40万", "80万"],
+    smsCode: "点击获取"
   },
   login: function () {
     wx.login({
@@ -51,5 +52,22 @@ Page({
     this.setData({
       amount: this.data.amounts[e.detail.value]
     });
+  },
+  timeInterval: function() {
+    var time = 60;
+    var timer = setInterval(function(){
+      time = time - 1;
+      if (time == 0) {
+        clearInterval(timer);
+        this.setData({
+          smsCode: "点击获取"
+        });
+      } else {
+          this.setData({
+            smsCode: time
+          });
+      }
+    }.bind(this), 1000);
+    
   }
 })
