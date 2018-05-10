@@ -12,7 +12,9 @@ Page({
     identites: ["上班族", "企业主", "个体户", "其他"],
     amount: "10万",
     amounts: ["5万", "10万", "20万", "30万", "40万", "80万"],
-    smsCode: "点击获取"
+    smsCode: "点击获取",
+    btnSmsCodeDisabled : false,
+    btn_sms_code_border_color: "#f95050"
   },
   login: function () {
     wx.login({
@@ -55,16 +57,25 @@ Page({
   },
   timeInterval: function() {
     var time = 60;
+    this.setData({
+      smsCode: time + "s",
+      btnSmsCodeDisabled: true,
+      btn_sms_code_border_color: "#d6d6d6"
+    });
     var timer = setInterval(function(){
       time = time - 1;
       if (time == 0) {
         clearInterval(timer);
         this.setData({
-          smsCode: "点击获取"
+          smsCode: "点击获取",
+          btnSmsCodeDisabled: false,
+          btn_sms_code_border_color: "#f95050"
         });
       } else {
           this.setData({
-            smsCode: time
+            smsCode: time + "s",
+            btnSmsCodeDisabled : true,
+            btn_sms_code_border_color: "#d6d6d6"
           });
       }
     }.bind(this), 1000);

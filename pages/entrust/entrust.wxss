@@ -85,14 +85,20 @@ page {
 }
 
 .view_protocol {
-  font-size: 28rpx;
   color: #a1a0a0;
   align-items: center;
-  margin-left: 22rpx
+  margin-left: 22rpx;
+  display: flex
 }
 
 .protocol {
   color: #050505;
+  font-size: 26rpx
+}
+
+.checkboxAgree {
+  zoom: 70%;
+  font-size: 30rpx
 }
 
 .button-hover {
