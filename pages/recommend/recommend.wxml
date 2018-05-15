@@ -1,0 +1,109 @@
+<view id='container'>
+  <scroll-view>
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='customer_container'>
+      <view class='customer'>
+        <text>服务用户数</text>
+        <text class='customer_num'>68900</text>
+      </view>
+
+      <view class='finance'>
+        <text>累计融资金额</text>
+        <text class='finance_amount'>360</text>
+        <text>亿</text>
+      </view>
+    </view>
+
+    <view class='horizontal_divider'></view>
+
+    <view class='tab_container'>
+      <view class='recommend_tab'>
+        <image class='tab' src='../../imgs/user-unlogin.png'></image>
+        <text class='tab_name'>上班族</text>
+      </view>
+      <view class='recommend_tab'>
+        <image class='tab' src='../../imgs/user-unlogin.png'></image>
+        <text class='tab_name'>企业主</text>
+      </view>
+      <view class='recommend_tab'>
+        <image class='tab' src='../../imgs/user-unlogin.png'></image>
+        <text class='tab_name'>个体户</text>
+      </view>
+      <view class='recommend_tab'>
+        <image class='tab' src='../../imgs/user-unlogin.png'></image>
+        <text class='tab_name'>为我推荐</text>
+      </view>
+    </view>
+
+    <view class='hot_container'>
+      <image class='img_hot' src='../../imgs/user-unlogin.png'></image>
+      <text class='hot_label'>人气推荐</text>
+      <text class='look_more'>查看更多</text>
+    </view>
+    <view class='horizontal_divider'></view>
+
+
+    <block wx:for="{{[1,2,3,4]}}">
+      <view class='prd_container'>
+        <view class='prd_item'>
+          <image class='prd_logo' src='../../imgs/user-unlogin.png'> </image>
+          <view class='prd_desc'>
+            <text class='prd_name'>益贷卡分期</text>
+            <view class='prd_amount_container'>
+              <text class='prd_date'>信用贷款/7天放款</text>
+              <text class='prd_amount'>额度：1-50万</text>
+            </view>
+            <view class='rate_container'>
+              <text>star</text>
+              <view class='rate'>
+                <text class='rate_label'>月利率：</text>
+                <text class='rate_value'>0.63%-0.7%</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='prd_item_divider'></view>
+      </view>
+    </block>
+
+    <view class='superior_tab'>
+      <view class='prd_rank_container'>
+        <text class='rank_title'>产品TOP10</text>
+        <text class='sub_title'>放款最多</text>
+        <image class='rank_icon' src='../../imgs/user-unlogin.png'> </image>
+      </view>
+
+      <view class='prd_rank_container'>
+        <text class='institution_title'>机构风云榜</text>
+        <text class='sub_title'>关注最多</text>
+        <image class='rank_icon' src='../../imgs/user-unlogin.png'> </image>
+      </view>
+
+      <view class='prd_rank_container'>
+        <text class='invest_title'>要找投资人</text>
+        <text class='sub_title'>要挂牌上市</text>
+        <image class='rank_icon' src='../../imgs/user-unlogin.png'> </image>
+      </view>
+    </view>
+
+    <view class='loan_flow_container'>
+      <view class='loan_flow_show'>
+        <image class='loan_flow_icon' src='../../imgs/user-unlogin.png'></image>
+        <text class='loan_flow_label'>贷款流程早知道</text>
+        <text class='no_show'>不再显示</text>
+      </view>
+      <view class='horizontal_divider'></view>
+
+    </view>
+  </scroll-view>
+
+
+
+</view>

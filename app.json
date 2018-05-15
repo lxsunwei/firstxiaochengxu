@@ -6,7 +6,8 @@
     "pages/buy/buy",
     "pages/detail/detail",
     "pages/entrust/entrust",
-    "pages/protocol/protocol"
+    "pages/protocol/protocol",
+    "pages/recommend/recommend"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -18,6 +19,11 @@
     "list":[
       {"pagePath": "pages/index/index",
         "text": "抢单",
+        "iconPath": "imgs/app_graporder_normal.png",
+        "selectedIconPath": "imgs/app_graporder_selected.png"
+      },{
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
         "iconPath": "imgs/app_graporder_normal.png",
         "selectedIconPath": "imgs/app_graporder_selected.png"
       },{

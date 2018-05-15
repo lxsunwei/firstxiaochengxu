@@ -1,0 +1,253 @@
+page {
+  background-color: #f9f9f9;
+}
+
+.customer_container {
+  display: flex;
+  align-items: baseline;
+  background: #fff;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+}
+
+.customer {
+  color: #a9a9a9;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+}
+
+.customer_num {
+  color: #989898;
+  font-size: 42rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
+.finance {
+  color: #a9a9a9;
+  font-size: 36rpx;
+  position: absolute;
+  right: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.finance_amount {
+  color: #989898;
+  font-size: 42rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
+.horizontal_divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.tab {
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.tab_name {
+  font-size: 30rpx;
+  color: #515151;
+  margin-top: 12rpx;
+}
+
+.recommend_tab {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.tab_container {
+  background: #fff;
+  padding-top: 60rpx;
+  padding-bottom: 60rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.img_hot {
+  width: 57rpx;
+  height: 57rpx;
+  margin-left: 30rpx;
+}
+
+.hot_label {
+  color: #010101;
+  font-size: 36rpx;
+  margin-left: 30rpx;
+}
+
+.hot_container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+
+.look_more {
+  color: #575757;
+  font-size: 32rpx;
+  position: absolute;
+  right: 36rpx;
+}
+
+.prd_logo {
+  width: 146rpx;
+  height: 146rpx;
+}
+
+.prd_item {
+  background: #fff;
+  padding-left: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30rpx;
+}
+
+.prd_name {
+  color: #161616;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.prd_desc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 33rpx;
+}
+
+.prd_date {
+  font-size: 32rpx;
+  color: #e8731c;
+}
+
+.prd_amount_container {
+  display: flex;
+  margin-top: 16rpx;
+  margin-bottom: 12rpx;
+}
+
+.prd_amount {
+  color: #525252;
+  font-size: 34rpx;
+  position: absolute;
+  right: 36rpx;
+}
+
+.rate_container {
+  display: flex;
+}
+
+.rate {
+  position: absolute;
+  right: 36rpx;
+}
+
+.rate_label {
+  color: #505050;
+  font-size: 34rpx;
+}
+
+.rate_value {
+  color: #ef2a44;
+  font-size: 34rpx;
+}
+
+.prd_container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.prd_item_divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d6d6d6;
+  margin-left: 30rpx;
+  align-items: flex-end;
+  margin-top: 30rpx;
+}
+
+.rank_title {
+  color: #5287cc;
+  font-size: 38rpx;
+}
+
+sub_title {
+  color: #4d4d4d;
+  font-size: 44rpx;
+  margin-top: 24rpx;
+}
+
+.prd_rank_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 45rpx
+}
+
+.institution_title {
+  color: #e96762;
+  font-size: 38rpx;
+}
+
+.invest_title {
+  color: #8f6e48;
+  font-size: 38rpx;
+}
+
+.superior_tab {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  padding-top: 20rpx;
+  margin-top: 30rpx;
+}
+
+.rank_icon {
+  width: 146rpx;
+  height: 146rpx;
+  margin-top: 20rpx;
+}
+
+.loan_flow_icon {
+ width: 40rpx;
+ height: 50rpx;
+}
+
+.loan_flow_label {
+  color: #555555;
+  font-size: 40rpx;
+}
+
+.no_show {
+  color: #d3b363;
+  font-size: 40rpx;
+  position: absolute;
+  right: 36rpx;
+}
+
+.loan_flow_show {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30rpx;
+  padding-left: 30rpx;
+}
+
+.loan_flow_container {
+  background: #ffffff;
+  padding-top: 30rpx;
+  margin-top: 30rpx;
+}
