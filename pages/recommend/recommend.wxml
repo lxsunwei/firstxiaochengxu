@@ -3,7 +3,7 @@
     <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
       <block wx:for="{{imgUrls}}">
         <swiper-item>
-          <image src="{{item}}" class="slide-image" width="355" height="150" />
+          <image src="{{item}}" class="slide-image" />
         </swiper-item>
       </block>
     </swiper>
@@ -49,7 +49,6 @@
     </view>
     <view class='horizontal_divider'></view>
 
-
     <block wx:for="{{[1,2,3,4]}}">
       <view class='prd_container'>
         <view class='prd_item'>
@@ -61,7 +60,12 @@
               <text class='prd_amount'>额度：1-50万</text>
             </view>
             <view class='rate_container'>
-              <text>star</text>
+              <block class="star_container" wx:for="{{stars}}" wx:for-item="item">
+                <image class="star-image" style="left: {{item*36}}rpx" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}"></image>
+                <view class="item" style="left:{{(item*2)*18}}rpx" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+                <view class="item" style="left:{{(item*2 +1)*18}}rpx" data-key="{{item+1}}" bindtap="selectRight"></view>
+              </block>
+
               <view class='rate'>
                 <text class='rate_label'>月利率：</text>
                 <text class='rate_value'>0.63%-0.7%</text>
@@ -69,6 +73,14 @@
             </view>
           </view>
         </view>
+
+        <view class="star1_container" >
+          <view wx:for="{{stars}}" wx:for-item="item">
+            <image bindtap='startEvent' class="star1-image" style="left: {{item*36}}rpx" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}"></image>
+          </view>
+
+        </view>
+
         <view class='prd_item_divider'></view>
       </view>
     </block>
@@ -79,13 +91,13 @@
         <text class='sub_title'>放款最多</text>
         <image class='rank_icon' src='../../imgs/user-unlogin.png'> </image>
       </view>
-
+      <view class='vertical_divier'></view>
       <view class='prd_rank_container'>
         <text class='institution_title'>机构风云榜</text>
         <text class='sub_title'>关注最多</text>
         <image class='rank_icon' src='../../imgs/user-unlogin.png'> </image>
       </view>
-
+      <view class='vertical_divier'></view>
       <view class='prd_rank_container'>
         <text class='invest_title'>要找投资人</text>
         <text class='sub_title'>要挂牌上市</text>
@@ -101,7 +113,51 @@
       </view>
       <view class='horizontal_divider'></view>
 
+      <view class='loan_flow'>
+        <view class='loan_flow12'>
+          <view class='loan_flow1'>
+            <text>申请贷款产品 >  信贷经理接单</text>
+          </view>
+          <view class='loan_flow2'>
+            <text>发布融资需求 >  信贷经理查看</text>
+          </view>
+        </view>
+
+        <view class='loan_flow3'>
+          <text> > 材料审批 > 成功放款</text>
+        </view>
+      </view>
     </view>
+
+    <view>
+      <view class='find_label'>
+        <image class='loan_flow_icon' src='../../imgs/user-unlogin.png'></image>
+        <text class='find'>发现</text>
+      </view>
+      <view class='horizontal_divider'></view>
+      <view class='find_item_container'>
+        <view class='find_item'>
+          <image class='find_loan_icon' src='../../imgs/user-unlogin.png'></image>
+          <text class='find_loan_title'>智能贷</text>
+          <text class='find_loan_sub_title'>快速精准找贷款</text>
+        </view>
+        <view class='vertical_divier'></view>
+        <view class='find_item'>
+          <image class='find_loan_icon' src='../../imgs/user-unlogin.png'></image>
+          <text class='find_loan_title'>一键委托</text>
+          <text class='find_loan_sub_title'>融资顾问帮您贷款</text>
+        </view>
+        <view class='vertical_divier'></view>
+        <view class='find_item'>
+          <image class='find_loan_icon' src='../../imgs/user-unlogin.png'></image>
+          <text class='find_loan_title'>贷款计算器</text>
+          <text class='find_loan_sub_title'>算算更省钱</text>
+        </view>
+      </view>
+    </view>
+
+    <image class='ad_bottom' src='../../imgs/recommend_bottom.png'></image>
+
   </scroll-view>
 
 
